@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "delibrately change background",
+  "version": "1.0.0",
+  "description": "A basic extension to change the background of current webpage",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background":{
+    "service-worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": { },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions":[
+    "http://*/*",
+    "https://*/*"
+  ]
+}
